@@ -3,8 +3,7 @@
 namespace App\Livewire\Settings;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\{Auth, Session};
 use Illuminate\Validation\Rule;
 use Livewire\Component;
 
@@ -19,7 +18,7 @@ class Profile extends Component
      */
     public function mount(): void
     {
-        $this->name = Auth::user()->name;
+        $this->name  = Auth::user()->name;
         $this->email = Auth::user()->email;
     }
 

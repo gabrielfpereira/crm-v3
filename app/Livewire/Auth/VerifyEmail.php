@@ -3,8 +3,7 @@
 namespace App\Livewire\Auth;
 
 use App\Livewire\Actions\Logout;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\{Auth, Session};
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
