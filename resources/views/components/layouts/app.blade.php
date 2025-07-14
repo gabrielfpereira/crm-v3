@@ -25,7 +25,7 @@
         <x-slot:sidebar drawer="main-drawer" collapsible class="bg-base-100 lg:bg-inherit">
  
             {{-- BRAND --}}
-            <div class="ml-5 pt-5">App</div>
+            <div class="ml-5 pt-5 text-2xl">CRM V3</div>
  
             {{-- MENU --}}
             <x-menu activate-by-route>

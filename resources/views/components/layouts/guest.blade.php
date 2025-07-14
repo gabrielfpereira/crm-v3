@@ -6,8 +6,8 @@
     <title>{{ env('APP_NAME', 'Laravel') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-md p-8 bg-white rounded shadow">
+<body class=" font-sans antialiased bg-base-200 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md p-8 rounded shadow">
         {{ $slot }}
     </div>
 </body>
