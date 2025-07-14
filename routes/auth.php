@@ -9,3 +9,4 @@ Route::get('/logout', function () {
 
     return redirect()->route('home');
 })->name('logout');
+Route::get('/login', \App\Livewire\Auth\Login::class)->name('login');
