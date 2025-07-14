@@ -20,9 +20,16 @@ class RegisterUser extends Component
     #[Rule(['required', 'string', 'min:8', 'same:password'])]
     public ?string $password_confirmation = '';
 
+    public function mount()
+    {
+        if (Auth::check()) {
+            return redirect('/dashboard');
+        }
+    }
+
     public function render()
     {
-        return view('livewire.auth.register-user');
+        return view('livewire.auth.register-user')->layout('components.layouts.guest');
     }
 
     public function register()
