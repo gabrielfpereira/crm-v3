@@ -1,5 +1,6 @@
 <div>
     <x-form wire:submit="register" >
+        <x-header title="Registro" separator />
 
         <x-input label="Name" wire:model="name" />
         <x-input label="E-mail" wire:model="email" />
